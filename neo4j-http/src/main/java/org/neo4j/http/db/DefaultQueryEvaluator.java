@@ -31,9 +31,9 @@ import org.springframework.cache.annotation.Cacheable;
 
 import reactor.core.publisher.Mono;
 
-class DefaultQueryEvaluator extends AbstractQueryEvaluator {
+public class DefaultQueryEvaluator extends AbstractQueryEvaluator {
 
-	DefaultQueryEvaluator(Driver driver) {
+	public DefaultQueryEvaluator(Driver driver) {
 		super(driver);
 	}
 

@@ -42,7 +42,7 @@ import reactor.util.function.Tuples;
  * @author Michael J. Simons
  */
 @Service
-class DefaultNeo4jAdapter implements Neo4jAdapter {
+public class DefaultNeo4jAdapter implements Neo4jAdapter {
 
 	private final ApplicationProperties applicationProperties;
 
@@ -52,7 +52,7 @@ class DefaultNeo4jAdapter implements Neo4jAdapter {
 
 	private final BookmarkManager bookmarkManager;
 
-	DefaultNeo4jAdapter(ApplicationProperties applicationProperties, QueryEvaluator queryEvaluator, Driver driver, BookmarkManager bookmarkManager) {
+	public DefaultNeo4jAdapter(ApplicationProperties applicationProperties, QueryEvaluator queryEvaluator, Driver driver, BookmarkManager bookmarkManager) {
 		this.applicationProperties = applicationProperties;
 		this.queryEvaluator = queryEvaluator;
 		this.driver = driver;
